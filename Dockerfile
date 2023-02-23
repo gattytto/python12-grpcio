@@ -5,9 +5,11 @@ RUN pip install base58
 RUN pip install kubernetes 
 RUN pip install requests 
 RUN pip install debugpy 
-RUN pip install grpcio grpcio-reflection 
+RUN pip install protobuf 
+RUN pip install proto-plus>=1.19.7 
+RUN pip install grpcio 
+RUN pip install grpcio-reflection 
 RUN pip install grpcio-health-checking 
-RUN pip install protobuf proto-plus>=1.19.7 
 RUN pip install google-api-core[grpc] 
 RUN pip install googleapis-common-protos>=1.55.0 
 RUN pip install libcst==0.3.23 
