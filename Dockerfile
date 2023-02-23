@@ -7,7 +7,7 @@ RUN pip install requests
 RUN pip install debugpy 
 RUN pip install protobuf 
 RUN pip install proto-plus>=1.19.7 
-RUN pip install --only-binary grpcio 
+RUN pip install --prefer-binary grpcio 
 RUN pip install grpcio-reflection 
 RUN pip install grpcio-health-checking 
 RUN pip install google-api-core[grpc] 
